@@ -1,0 +1,48 @@
+.om-mig {
+    display: flex;
+    flex-direction: row; /* Rad för att placera elementen bredvid varandra */
+    align-items: center; /* Centrera vertikalt */
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.om-mig-text {
+    flex: 1; /* Tar upp all tillgänglig plats i flex-container */
+    padding-right: 20%; /* Justera avståndet mellan text och bild */
+}
+
+.om-mig-bild {
+    flex: 1; /* Tar upp all tillgänglig plats i flex-container */
+}
+
+.om-mig-bild img {
+    max-width: 100%; /* Säkerställer att bilden inte överskrider dess förälders bredd */
+    max-height: 400px; /* Begränsar höjden till högst 300px */
+    height: auto; /* Behåller bildens proportioner */
+}
+
+
+
+.utbildning {
+    display: flex;
+    flex-direction: row; /* Rad för att placera elementen bredvid varandra */
+    align-items: center; /* Centrera vertikalt */
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+}
+
+.utbildning-text {
+    flex: 1; /* Tar upp all tillgänglig plats i flex-container */
+    padding-left: 5%; /* Justera avståndet mellan text och bild */
+}
+
+.utbildning-bild {
+    flex: 1; /* Tar upp all tillgänglig plats i flex-container */
+}
+
+.utbildning-bild img {
+    max-width: 100%; /* Säkerställer att bilden inte överskrider dess förälders bredd */
+    max-height: 300px; /* Begränsar höjden till högst 300px */
+    height: auto; /* Behåller bildens proportioner */
+}
