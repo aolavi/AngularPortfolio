@@ -34,7 +34,7 @@
 
 .utbildning-text {
     flex: 1; /* Tar upp all tillgänglig plats i flex-container */
-    padding-left: 5%; /* Justera avståndet mellan text och bild */
+    padding-left: 0%; /* Justera avståndet mellan text och bild */
 }
 
 .utbildning-bild {
@@ -45,4 +45,20 @@
     max-width: 100%; /* Säkerställer att bilden inte överskrider dess förälders bredd */
     max-height: 300px; /* Begränsar höjden till högst 300px */
     height: auto; /* Behåller bildens proportioner */
+}
+
+
+.aboutBtn {
+    background-color: #48FFD3;
+    /*border: 2px solid #ff0000;*/
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 30px;
+    justify-content: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 20px;
+    margin: 5% 43%;
+    cursor: pointer;
+    
 }
