@@ -1,0 +1,47 @@
+.section__title {
+    margin-left: 15%;
+    margin-bottom: 5%;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap; /* Gör att projekten kan ombrytas till nästa rad om det inte finns tillräckligt med plats */
+    justify-content: space-between; /* Placerar projekten jämnt mellanrum åt höger och vänster */
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.project {
+    flex: 0 1 calc((100% / 3) - 20px); /* Delar förälderkontainerns bredd i tre delar och tar bort marginaler */
+    margin-bottom: 20px; /* Lägger till ett avstånd under varje projekt */
+    max-width: 30%;
+}
+
+
+.project__info {
+    text-align: center; /* Centrerar texten under varje projekt */
+    background-color: aqua;
+    margin: 0 auto; /* Centrerar elementet horisontellt i förälderkontainern */
+}
+
+.project__image {
+    width: 100%; /* Sätter bilden att fylla sin container horisontellt */
+}
+
+.project__title {
+    margin-top: 10px; /* Lägger till ett avstånd över projekttiteln */
+}
+
+.project__description {
+    margin-top: 5px; /* Lägger till ett avstånd över projektsbeskrivningen */
+}
+
+.project__roles {
+    padding: 0; /* Tar bort eventuellt padding från standardlistan */
+    list-style: none; /* Tar bort punktlistestil från standardlistan */
+}
+
+.project__role {
+    display: inline-block; /* Gör att taggar visas i en rad */
+    margin-right: 5px; /* Lägger till ett avstånd mellan taggar */
+}
