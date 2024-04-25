@@ -4,8 +4,9 @@ import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
 
 const routes: Routes = [
-    {path: '', component: HomeComponent},
-    {path: 'projects', component: ProjectsComponent}
+    { path: '', component: HomeComponent },
+    { path: 'projects', component: ProjectsComponent },
+    { path: '**', redirectTo: '/home' } // Wildcard-route för att omdirigera alla andra URL:er till startsidan
 ];  
 
 @NgModule({

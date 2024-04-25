@@ -22,7 +22,6 @@
 }
 
 
-
 .utbildning {
     display: flex;
     flex-direction: row; /* Rad för att placera elementen bredvid varandra */
@@ -60,5 +59,4 @@
     font-size: 20px;
     margin: 5% 43%;
     cursor: pointer;
-    
 }
