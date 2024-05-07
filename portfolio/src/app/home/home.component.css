@@ -1,16 +1,22 @@
+h1 {
+    line-height: 0.75;
+    font-size: 70px;
+}
+
 .om-mig {
     display: flex;
     flex-direction: row; /* Rad för att placera elementen bredvid varandra */
     align-items: center; /* Centrera vertikalt */
     padding-left: 10%;
     padding-right: 10%;
+    color: #0a2040;
+    padding-top: 5%;
 }
 
 .om-mig-text {
     flex: 1; /* Tar upp all tillgänglig plats i flex-container */
-    padding-right: 20%; /* Justera avståndet mellan text och bild */
+    padding-right: 10%; /* Justera avståndet mellan text och bild */
 }
-
 .om-mig-bild {
     flex: 1; /* Tar upp all tillgänglig plats i flex-container */
 }
@@ -29,6 +35,7 @@
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 5%;
+    color: #0a2040;
 }
 
 .utbildning-text {
@@ -50,7 +57,7 @@
 .aboutBtn {
     background-color: #48FFD3;
     /*border: 2px solid #ff0000;*/
-    color: #000000;
+    color: #0a2040;
     padding: 10px 20px;
     border-radius: 30px;
     justify-content: center;
@@ -59,4 +66,17 @@
     font-size: 20px;
     margin: 5% 43%;
     cursor: pointer;
+}
+
+.header-bild {
+    flex: 1; /* Tar upp all tillgänglig plats i flex-container */
+    position: absolute; /* Placera bilden relativt till sin container */
+    top: 0;
+    z-index: -1; /* Placera bilden bakom header-menyn */
+}
+
+.header-bild img {
+    max-width: 100%; /* Säkerställer att bilden inte överskrider dess förälders bredd */
+    max-height: 400px; /* Begränsar höjden till högst 300px */
+    height: auto; /* Behåller bildens proportioner */
 }

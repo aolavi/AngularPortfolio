@@ -1,12 +1,14 @@
 .section__title {
+    margin-top: 5%;
     margin-left: 15%;
-    margin-bottom: 5%;
+    font-size: 50px;
+    padding-top: 7%;
 }
 
 .projects {
     display: flex;
     flex-wrap: wrap; /* Gör att projekten kan ombrytas till nästa rad om det inte finns tillräckligt med plats */
-    justify-content: space-between; /* Placerar projekten jämnt mellanrum åt höger och vänster */
+    justify-content: space-around; /* Placerar projekten jämnt mellanrum åt höger och vänster */
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -48,4 +50,59 @@
 .project__role {
     display: inline-block; /* Gör att taggar visas i en rad */
     margin-right: 5px; /* Lägger till ett avstånd mellan taggar */
+}
+
+
+/*--------------------------------------------------------*/
+
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 98%;
+    height: 98%;
+    position: absolute;
+    top: 0;
+    left:4px;
+    background: rgb(72,255,211, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+    border-radius: 20px;
+}
+
+.content:hover {
+    opacity: 1;
+}
+
+.content h3 {
+    font-size: 20px;
+    color: #0a2040;
+    margin-top: 5%;
+}
+
+.content p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #0a2040;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.content > * {
+    transform: translateY(25px);
+    transition: transform 0.5s;
+}
+
+.content:hover > * {
+    transform: translateY(0);
 }

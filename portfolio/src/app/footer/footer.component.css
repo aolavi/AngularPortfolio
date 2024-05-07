@@ -2,8 +2,9 @@
     flex: 1; /* Tar upp all tillgänglig plats i flex-container */
     background-image: url(../../assets/images/Footer.png);
     background-size: cover; /* Säkerställer att bakgrundsbilden täcker hela .footer-elementet */
-    background-position: center; /* Centrerar bakgrundsbilden */
+    /*background-position: center; Centrerar bakgrundsbilden */
     text-align: center; /* Centrerar texten vertikalt och horisontellt */
-    color: white; /* Ändra textens färg för att synas mot bakgrundsbilden */
+    color: #0a2040; /* Ändra textens färg för att synas mot bakgrundsbilden */
     padding: 20px; /* Lägg till lite utrymme runt texten för att förbättra läsbarheten */
+    padding-top: 50px;
 }
