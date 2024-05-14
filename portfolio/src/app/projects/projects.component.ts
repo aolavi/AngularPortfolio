@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class ProjectsComponent {
 
+    constructor() { }
+
+    showAlert() {
+      alert('Här ska man navigeras till en sida mer mer information och bilder om projektet. Denna håller på att implementeras.');
+    }
 }

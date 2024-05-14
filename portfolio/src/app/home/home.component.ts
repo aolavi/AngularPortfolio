@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+    constructor() { }
 
+    showAlert() {
+      alert('Här ska man navigeras till en sida med mer information om Anton. Denna håller på att implementeras.');
+    }
 }

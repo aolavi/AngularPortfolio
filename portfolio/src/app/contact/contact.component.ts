@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './contact.component.css'
 })
 export class ContactComponent {
+    constructor() { }
 
+    showAlert() {
+      alert('Här ska man navigeras till en sida med ett kontaktformulär. Denna håller på att implementeras.');
+    }
 }
